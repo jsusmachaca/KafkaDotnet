@@ -2,6 +2,6 @@
 
 git clone https://github.com/jsusmachaca/KafkaDotnet.git /tmp/KafkaDotnet
 
-echo -e "KAFKA_SERVER=$KAFKA_SERVER\n" > .env
+echo -e "KAFKA_SERVER=$KAFKA_SERVER\n" > /tmp/KafkaDotnet/.env
 
 docker compose -f /tmp/KafkaDotnet/docker-compose.yml up -d
